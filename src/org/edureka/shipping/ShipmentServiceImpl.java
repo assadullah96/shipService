@@ -1,4 +1,5 @@
 package org.edureka.shipping;
+import java.util.Scanner;
 
 public class ShipmentServiceImpl implements IShipment {
 
@@ -6,7 +7,14 @@ public class ShipmentServiceImpl implements IShipment {
 	public boolean addShipment() {
 		Shipment shipment;
 		int resId;
-		System.in(resId);
+		
+		Scanner in = new Scanner(System.in);
+	     
+	      System.out.println("Enter a resource id: ");
+	      resId = in.nextInt();
+	      //shipment.setResourceId(resId);
+	      
+	      //System.out.println("You entered integer " + a);
 		
 		return false;
 	}
@@ -19,7 +27,9 @@ public class ShipmentServiceImpl implements IShipment {
 
 	@Override
 	public boolean getShipment() {
-		// TODO Auto-generated method stub
+		//Shipment ship;
+		//ship.getChargeAmount();
+		
 		return false;
 	}
 
